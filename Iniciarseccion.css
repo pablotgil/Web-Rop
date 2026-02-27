@@ -1,0 +1,30 @@
+body {
+    background-image: url("/IMG/Menu/Fondo\ de\ pantalla.png");
+    
+    background-position:center;
+    text-align: center;
+    align-items: ceter; 
+}
+
+.Formulario label {
+    font-size: 26px;
+    
+}
+.boton {
+    background-color: #181d18; /* Verde */
+    border: none;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 32px;
+    border-radius: 40PX;
+    color: aliceblue;
+}
+.boton a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
