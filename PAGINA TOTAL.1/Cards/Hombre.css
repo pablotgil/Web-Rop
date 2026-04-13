@@ -1,0 +1,151 @@
+
+
+body{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box ;
+    background-color: #111009; 
+    min-height: 100vh;
+    background-size: cover;
+        background-position: center;   
+    }
+
+
+a{
+text-decoration: none!important;
+color: #FFFACA!important;
+}
+/* Estilos de barra lateral */
+
+#icon-lista{
+    display: none;
+}
+
+#icon-lista:checked ~ .menu_completolateral {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu_completolateral{
+    position: absolute;
+    background: rgba(107, 104, 104, 0.905);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+}
+
+.barra_Lateral{
+ width: 100%;
+ max-width: 150px;
+ background: #1c1c1c;
+ height: 100vh;
+ transition: all 500ms ease;
+}
+
+.barra_Lateral nav {
+
+    transform: translateY(15%);
+}
+
+.barra_Lateral nav a {
+    display: block;
+    padding: 20px;
+    border-left: solid transparent;
+    transition: all 400ms ease;
+    color: #ffffff;
+}
+
+.barra_Lateral nav a:hover {
+    border-left: 5px solid azure;
+    background: #757474;
+}
+
+.barra_Lateral label {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+}
+
+.icon-lista {
+cursor: pointer;
+width: 100px;
+font-size: 22px;
+}
+
+
+/* Estilos de la parte superior */
+.Menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 3%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2%;
+    background-color: #004f3934;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.919);
+    border: 2px solid #004f392b;
+    
+}
+
+.Hamburg {
+cursor: pointer;
+color: #FFFACA;
+display: flex;
+align-items: center;
+}
+
+.Logo {
+ font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 1.5rem);
+  font-weight: 300;
+  color: #FFFACA;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  animation: fadeUp 1s 0.2s cubic-bezier(0.16,1,0.3,1) both;
+ max-width: 250px;  
+}
+
+
+/* Cards */
+
+.contenedor{
+
+    width:80%;
+    margin: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+gap: 40px;
+   
+}
+
+
+.card1 {
+    display: flex;
+    text-align: center;
+    align-items: stretch;
+    gap: 5PX;
+}
+
+.CardInterna {
+    display: block;
+    display: grid;
+    gap: 0;  
+    
+}
+
+.cardTitilo{
+    color: #FFFACA;
+
+}

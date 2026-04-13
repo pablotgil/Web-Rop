@@ -1,0 +1,136 @@
+
+body {
+    min-height: 100vh;
+    background-color: #151613 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+
+}
+
+ 
+.yin{
+
+    padding: 9%;
+    background-color: #004f39;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2PX solid #000000;
+    font-family: 'Cormorant Garamond', serif;
+    
+    color: #FFFACA;
+ 
+}
+
+.logo {
+
+    font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 5vw, 1.5rem);
+  font-weight: 300;
+  color: #FFFACA;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  animation: fadeUp 1s 0.2s cubic-bezier(0.16,1,0.3,1) both;
+  margin-bottom: 45PX;
+}
+
+
+
+.Forma {
+ display: flex;
+ justify-content: center;
+ border: 2px solid;
+ border-radius: 8px;
+ border-color: #072f22;
+ overflow: hidden;
+ margin: 16px;
+ color: black;
+ background-color: #050f0a0f;
+ box-shadow:   #ff0707;
+ width: 80%;
+}
+
+
+.btn {
+ background-color: #000000e0;   
+ margin-top: 4px;
+}
+.label {
+
+width:100%;
+max-width: 450px;
+text-align: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 16% ;
+gap: 20px;
+background-color: #050706c7;
+
+border: 2px solid;
+border-color: #010101;
+
+color: #FFFACA;
+
+
+}
+.link {
+ text-decoration: none;
+ color: inherit;
+}
+
+.label input {
+    padding: 1 rem !important;
+    
+}
+
+
+input {
+
+ border: none;
+ border-bottom: 1px solid #004f39;
+ background:transparent ;
+ color:#FFFACA;
+ padding: 8px;
+ width: 100%;
+}
+
+.inpust{
+
+    color: #FFFACA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.Listo{
+padding: 10px;
+background-color: #004f39;
+margin: 10%;
+padding-left: 40PX;
+padding-right: 40PX;
+border-radius: 10px;
+border: none;
+}
+
+h2{
+    
+   
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    color: #FFFACA;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin: auto;
+
+}

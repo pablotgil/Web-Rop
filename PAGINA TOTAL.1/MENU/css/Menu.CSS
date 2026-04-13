@@ -1,0 +1,255 @@
+body{
+    margin: 10px !important;
+    padding: 0!important ;
+    box-sizing: border-box !important;
+    background-color: #111009!important; 
+    min-height: 100vh!important;
+    background-size: cover!important;
+    background-position: center!important;   
+}
+
+
+a{
+text-decoration: none!important;
+color: #FFFACA!important;
+}
+
+ 
+/* Estilos de barra lateral */
+
+#icon-lista{
+    display: none;
+}
+
+#icon-lista:checked ~ .menu_completolateral {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu_completolateral{
+    position: absolute;
+    background: rgba(107, 104, 104, 0.905);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+}
+
+.barra_Lateral{
+ width: 100%;
+ max-width: 150px;
+ background: #1c1c1c;
+ height: 100vh;
+ transition: all 500ms ease;
+}
+
+.barra_Lateral nav {
+
+    transform: translateY(15%);
+}
+
+.barra_Lateral nav a {
+    display: block;
+    padding: 20px;
+    border-left: solid transparent;
+    transition: all 400ms ease;
+    color: #ffffff;
+}
+
+.barra_Lateral nav a:hover {
+    border-left: 5px solid azure;
+    background: #757474;
+}
+
+.barra_Lateral label {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+}
+
+.icon-lista {
+cursor: pointer;
+width: 100px;
+font-size: 22px;
+}
+
+
+
+/* Estilos de la parte superior */
+.Menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 3%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2%;
+    background-color: #004f3934;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.919);
+    border: 2px solid #004f392b;
+    
+}
+
+.Hamburg {
+cursor: pointer;
+color: #FFFACA;
+display: flex;
+align-items: center;
+}
+
+.Logo {
+ font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 1.5rem);
+  font-weight: 300;
+  color: #FFFACA;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  animation: fadeUp 1s 0.2s cubic-bezier(0.16,1,0.3,1) both;
+ max-width: 250px;  
+}
+
+/* Estilos Carrusel y las 3 opciones */
+
+#carouselExampleAutoplaying {
+    box-shadow: 0px 0px 1px rgba(240, 240, 240, 0.8);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 545PX;
+    object-fit: cover;
+    object-position: top;
+    
+}
+
+
+
+.IMG{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 40PX 35PX 40PX 35PX;
+    align-items: stretch;
+    gap: 16PX;
+    
+}
+
+.IMG img{
+
+    border: solid 2PX #004f3934;
+}
+
+.ParteDerecha{   
+    flex: 1;
+    display: flex;
+    gap: 19PX;
+    flex-direction: column;
+    font-size: 21px;
+    isolation: isolate;
+}
+
+.H{
+padding: 9%;
+padding-right: 470px;
+background-color: #004f3934;;
+border-radius: 2px;
+border: solid 2px #00000077;
+color: #FFFACA;
+ transition: all 1.2s ease;
+ position: relative;
+}
+
+.H:hover {
+ 
+  font-size: 1.1rem;    
+  transform: scale(1.05);
+  transition: all 0.4s ease;        
+  border: 2px solid #e8d5a3;     
+  letter-spacing: 3px;          
+  color: #ffffff; 
+  
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+/* Estilos de las Cards */
+.carrusel{
+ overflow-x: auto;
+scroll-snap-type: x mandatory;
+ scrollbar-width: none;
+}
+
+
+
+.cards{
+ 
+display: flex;
+gap: 60PX;
+margin: 23px;
+}
+
+
+.card1{
+display: flex;
+text-align: center;
+align-items: stretch;
+padding: 2%;
+background-color: #004f3934;
+border-radius: 2px;
+border: solid 1PX #fffaca63;
+}
+
+
+
+.Cont-car{
+padding: 2%;
+background-color: #004f3934;
+}
+
+.CardInterna{
+display: flex;
+flex-direction: column;
+
+}
+
+.card-body {
+margin: 20px;
+
+
+}
+
+
+.cardTitilo {
+
+    color: #FFFACA;
+}
+
+
+
+.Botones{
+display: flex;
+ justify-content: space-between;
+}
+
+.Boton-cards{
+    background-color: #FFFACA;
+    padding-right: 20px;
+
+   margin-left: 15px;
+}
+    
+
