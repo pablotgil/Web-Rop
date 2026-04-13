@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blazers</title>
+    <link rel="stylesheet" href="Hombre.css">
+    
+
+    <link rel="shortcut icon" href="/IMG/logo.png" type="image/x-icon"  >
+
+    <!-- Comando para hacer llamado a react -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- Comando para el icocno de hamburguesa -->
+    <link rel="stylesheet" href="/MENU/css/fontello.css">
+    <link rel="shortcut icon" href="/IMG/logo.png" type="image/x-icon"  >
+
+</head>
+<body>
+<!-- Barra lateral (Inicio) -->
+
+<input type="checkbox" id="icon-lista">
+
+<div class="menu_completolateral"> 
+  <div class="barra_Lateral">
+     
+    <nav>
+      <a href="http://127.0.0.1:5500/MENU/Menu.HTML">Inicio</a> 
+      <a href="http://127.0.0.1:5500/Cards/Hombre.html">Hombre</a>
+      <a href="">Mujer</a>
+      <a href="">Trajes</a>
+      <a href="">Vestidos</a>
+      <a href="">Tallas</a>
+    </nav> 
+    
+    <!-- Label para cerrar (la "x") - ahora sí cierra el menú -->
+    <label for="icon-lista">x</label>
+   
+  </div>
+</div>
+
+ <!--Fin De Barra lateral-->
+
+
+
+<!-- Parte superior (Inicio)-->
+
+<div class="Menu">
+
+  <div class="Hamburg" >
+    
+    <label for="icon-lista" class="icon-lista"></label> <!--Icono de menu-->
+    <h1 class="Logo">kiaüot</h1> <!--Logo -->
+    
+  </div>
+  
+  <div class="Resgis_IniciarSeccion">
+    
+    <a class="Register" href="http://localhost/PAGINA%20TOTAL/Resgrito/Registrar.php#">Registrarse |</a>
+    <a class="Iniciar_Seccion"  href="http://localhost/PAGINA%20TOTAL/Resgrito/IniciarSe.php">Iniciar Sesion</a>
+  
+  </div>
+  
+</div>
+  
+   <!--Fin-->
+
+
+<div class="contenedor">
+    <div class="card-body">
+        <h5 class="cardTitilo">TRAJES</h5>
+    </div>
+    
+    <div id="cards-root">
+      
+    </div>
+</div>
+
+   
+
+<!--Codigo React-->
+<script type="text/babel">
+
+  const productos = [
+    { p: "/IMG/Menu/IMG CARD 1.0.jpg", a: "/IMG/Menu/IMG CARD 1.5.jpg", b: "/IMG/Menu/IMG CARD 1.1.jpg" },
+    { p: "/IMG/Menu/IMG CARD 2.0.jpg", a: "/IMG/Menu/IMG CARD 2.1.jpg", b: "/IMG/Menu/IMG CARD 1.05.jpg" },
+    { p: "/IMG/Menu/IMD CARD 3.0.jpg", a: "/IMG/Menu/IMD CARD 3.05.jpg", b: "/IMG/Menu/IMD CARD 3.1.jpg" },
+    { p: "/IMG/Menu/IMG CARD 4.0.jpg", a: "/IMG/Menu/IMG CARD 4.05.jpg", b: "/IMG/Menu/IMG CARD 4.1.jpg" },
+  
+  
+  ]
+
+
+  function Grid() { 
+    return (
+      <div className="cards">
+
+        {productos.map((x, i) => (
+
+          <div key={i} className="card1">
+
+            <div>
+              <img src={x.p} height="306px" width="320px" />
+            </div>                        
+
+            <div className="CardInterna">
+              <img src={x.a} height="150px" width="200px" />
+              <img src={x.b} height="150px" width="200px" />
+            </div>
+
+            
+          </div>
+        ))}
+
+
+      </div>
+    )
+  }
+
+  ReactDOM.createRoot(document.getElementById("cards-root")).render(<Grid />)
+
+</script>
+
+
+
+</body>
+</html>
